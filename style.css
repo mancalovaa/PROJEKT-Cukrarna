@@ -1,7 +1,12 @@
 /* intuitivnější box-sizing pro všechny prvky na stránce */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 /*
 	Poznámky:
@@ -26,10 +31,185 @@ html { box-sizing: border-box; }
 	#242424		(skoro) černá - na běžný text
 	#f0f0f0		světle šedé pozadí prostřední sekce
 	#303339		tmavé pozadí patičky
+
+  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
 */
 
-
 body {
-	margin: 0;
+  margin: 0;
+  color: #242424;
+  line-height: 1.5;
+  font-family: 'Lora', serif;
 }
 
+
+h1,
+h2,
+h3 {
+  color: #3e606b;
+  line-height: 1.25;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+footer {
+  background-color: #303339;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  width: 170px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.zalozka {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #242424;
+}
+
+.zalozka:hover {
+  background-color: #f195b2;
+  border-radius: 20px;
+  color: white;
+}
+
+.hero_foto {
+  background-image: url(images/cupcake.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+  color: white;
+}
+
+.hero p {
+  font-size: 24px;
+  color: white;
+  font-style: italic;
+}
+
+.hero p,
+.hero h1 {
+  width: 60%;
+}
+
+.obsah {
+  max-width: 1100px;
+  padding: 80px 0;
+  margin: auto;
+  position: relative;
+}
+
+.nabidka {
+  background-color: #f0f0f0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.vitejte,
+.pristup,
+.produkty {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.vyrobky {
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: #f195b2;
+  color: white;
+  border-radius: 30px;
+}
+
+.vyrobky:hover {
+  background-color: #d2567d;
+  color: white;
+  border-radius: 30px;
+}
+
+.popis,
+.prava,
+.leva {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.popis {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+	margin-bottom: 30px;
+}
+
+
+
+.prava img,
+.leva img {
+  width: 100%;
+  border-radius: 5px;
+  align-items: center;
+}
+
+header,
+footer {
+  padding: 30px 0;
+}
+
+.zakusek {
+
+  flex-shrink: 1;
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.zakusek img {
+  flex-shrink: 1;
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.zakusek h3,
+.zakusek p {
+  margin: 20px;
+}
+
+.zakusek h3 {
+  text-align: center;
+}
